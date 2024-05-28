@@ -12,10 +12,13 @@
         genres: [],
         privat: false
     }
-    const lastFilm = prompt("Последний из просмотренных фильмов","");
-    const yourGrade = prompt("На сколько оцените его?", "");
+    const lastFilm = prompt("Последний из просмотренных фильмов",""),
+          yourGrade = prompt("На сколько оцените его?", ""),
+          lastFilmSecond = prompt("Последний из просмотренных фильмов",""),
+          yourGradeSecond = prompt("На сколько оцените его?", "");
 
-    personalMovieDb.movies[lastFilm];
-    personalMovieDb.movies[yourGrade];
+    personalMovieDb.movies[lastFilm] = yourGrade;
+    personalMovieDb.movies[lastFilmSecond] = yourGradeSecond;
+    
 
     console.log(personalMovieDb);
