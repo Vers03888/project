@@ -1,20 +1,14 @@
 'use strict';
 
- let numberOfFilms = [];
-
- numberOfFilms[0] = prompt("Сколько фильмов вы уже посмотрели?","");
+ const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?","");
 
 // console.log(numberOfFilms);
 
 
     const personalMovieDb = {
-        count: numberOfFilms[0],
-        movies: {
-    
-        },
-        actors: {
-    
-        },
+        count: numberOfFilms,
+        movies: {},
+        actors: {},
         genres: [],
         privat: false
     }
